@@ -25,19 +25,11 @@ export function BrandMark({
       <span className="flex flex-col leading-none">
         <span
           className={cn(
-            'font-serif text-xl tracking-[0.2em]',
+            'text-xl tracking-[0.12em] font-(family-name:--font-bodoni)',
             invert ? 'text-background' : 'text-foreground',
           )}
         >
           Familia Fumagalli
-        </span>
-        <span
-          className={cn(
-            'mt-1 text-[0.6rem] uppercase tracking-[0.34em]',
-            invert ? 'text-background/70' : 'text-muted-foreground',
-          )}
-        >
-          Cerro Leones, Tandil
         </span>
       </span>
     </span>
