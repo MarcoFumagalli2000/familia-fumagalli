@@ -61,7 +61,7 @@ export default function HomePage() {
       {/* Time & place */}
       <section className="bg-background py-24">
         <div className="mx-auto grid max-w-7xl items-center gap-14 px-6 md:grid-cols-2">
-          <div className="relative aspect-[4/5] overflow-hidden">
+          <div className="relative aspect-4/5 overflow-hidden">
             <Image
               src="/images/vineyard-rows.png"
               alt="Hileras de viñas al amanecer"
@@ -107,7 +107,7 @@ export default function HomePage() {
               <ArrowRight className="size-4" />
             </Link>
           </div>
-          <div className="relative order-1 aspect-[4/5] overflow-hidden md:order-2">
+          <div className="relative order-1 aspect-4/5 overflow-hidden md:order-2">
             <Image
               src="/images/estate.png"
               alt="Arquitectura de la bodega"
