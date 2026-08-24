@@ -37,7 +37,7 @@ export default function MediaPage() {
           <div className="grid gap-10 md:grid-cols-3">
             {t.media.articles.map((article, i) => (
               <article key={article.title} className="group flex flex-col">
-                <div className="relative aspect-[3/2] overflow-hidden">
+                <div className="relative aspect-3/2 overflow-hidden">
                   <Image
                     src={articleImages[i % articleImages.length] || '/placeholder.svg'}
                     alt={article.title}
