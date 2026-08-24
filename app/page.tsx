@@ -21,7 +21,7 @@ export default function HomePage() {
         />
         <div className="absolute inset-0 bg-black/45" />
         <div className="relative mx-auto max-w-3xl px-6 text-center text-background">
-          <p className="mb-6 text-xs uppercase tracking-[0.4em] text-background/80">
+          <p className="mb-6 text-xs tracking-[0.4em] text-background/80">
             {t.home.heroKicker}
           </p>
           <h1 className="text-balance font-serif text-5xl leading-[1.05] md:text-7xl">
@@ -92,13 +92,20 @@ export default function HomePage() {
       <section className="bg-background py-24">
         <div className="mx-auto grid max-w-7xl items-center gap-14 px-6 md:grid-cols-2">
           <div className="order-2 md:order-1">
-            <p className="mb-4 text-xs uppercase tracking-[0.3em] text-bordeaux">La Finca</p>
+            <p className="mb-4 text-xs uppercase tracking-[0.3em] text-bordeaux">La Familia</p>
             <h2 className="text-balance font-serif text-4xl leading-tight md:text-5xl">
               {t.home.sectionEstateTitle}
             </h2>
             <p className="mt-6 text-pretty leading-relaxed text-muted-foreground">
               {t.home.sectionEstateBody}
             </p>
+            <Link
+              href="/contenido"
+              className="mt-8 inline-flex items-center gap-2 text-sm uppercase tracking-[0.16em] text-bordeaux transition-opacity hover:opacity-70"
+            >
+              Conoce nuestra historia
+              <ArrowRight className="size-4" />
+            </Link>
           </div>
           <div className="relative order-1 aspect-[4/5] overflow-hidden md:order-2">
             <Image

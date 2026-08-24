@@ -77,7 +77,7 @@ export const dictionaries: Record<Locale, Dictionary> = {
     nav: { home: 'Inicio', wines: 'Nuestros Vinos', media: 'Sobre nosotros', contact: 'Contacto' },
     cta: {
       visit: 'Planificar una visita',
-      explore: 'Explorar añadas',
+      explore: 'Explorar variedades',
       discover: 'Descubrir nuestros vinos',
       send: 'Enviar solicitud',
     },
@@ -170,7 +170,7 @@ export const dictionaries: Record<Locale, Dictionary> = {
     nav: { home: 'Home', wines: 'Our Wines', media: 'Media', contact: 'Visit Us' },
     cta: {
       visit: 'Plan a visit',
-      explore: 'Explore vintages',
+      explore: 'Explore varieties',
       discover: 'Discover our wines',
       send: 'Send request',
     },
@@ -263,7 +263,7 @@ export const dictionaries: Record<Locale, Dictionary> = {
     nav: { home: 'Home', wines: 'I Nostri Vini', media: 'Contenuti', contact: 'Visitaci' },
     cta: {
       visit: 'Pianifica una visita',
-      explore: 'Esplora le annate',
+      explore: 'Esplora le varietà',
       discover: 'Scopri i nostri vini',
       send: 'Invia richiesta',
     },

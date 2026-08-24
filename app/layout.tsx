@@ -1,6 +1,6 @@
 import { Analytics } from '@vercel/analytics/next'
 import type { Metadata, Viewport } from 'next'
-import { Cormorant_Garamond, Jost } from 'next/font/google'
+import { Bodoni_Moda, Cormorant_Garamond, Jost } from 'next/font/google'
 import { LanguageProvider } from '@/components/language-provider'
 import { SiteHeader } from '@/components/site-header'
 import { SiteFooter } from '@/components/site-footer'
@@ -16,6 +16,12 @@ const jost = Jost({
   subsets: ['latin'],
   weight: ['300', '400', '500', '600'],
   variable: '--font-jost',
+})
+
+const bodoni = Bodoni_Moda({
+  subsets: ['latin'],
+  weight: ['400', '500', '600', '700'],
+  variable: '--font-bodoni',
 })
 
 export const metadata: Metadata = {
@@ -36,7 +42,10 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="es" className={`light bg-background ${cormorant.variable} ${jost.variable}`}>
+    <html
+      lang="es"
+      className={`light bg-background ${cormorant.variable} ${jost.variable} ${bodoni.variable}`}
+    >
       <body className="antialiased font-sans">
         <LanguageProvider>
           <div className="flex min-h-dvh flex-col">
