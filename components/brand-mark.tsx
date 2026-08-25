@@ -25,7 +25,7 @@ export function BrandMark({
       <span className="flex flex-col leading-none">
         <span
           className={cn(
-            'text-xl tracking-[0.12em] font-(family-name:--font-bodoni)',
+            'text-xl tracking-[0.15em] font-(family-name:--font-cormorant) font-normal',
             invert ? 'text-background' : 'text-foreground',
           )}
         >

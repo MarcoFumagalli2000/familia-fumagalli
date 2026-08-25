@@ -3,14 +3,12 @@
 import Link from 'next/link'
 import { useState } from 'react'
 import { Check } from 'lucide-react'
-import { cn } from '@/lib/utils'
 import { useLanguage } from '@/components/language-provider'
-import { locales } from '@/lib/i18n'
 import { BrandMark } from '@/components/brand-mark'
 import { FacebookIcon, InstagramIcon, WhatsappIcon } from '@/components/social-icons'
 
 export function SiteFooter() {
-  const { t, locale, setLocale } = useLanguage()
+  const { t } = useLanguage()
   const [subscribed, setSubscribed] = useState(false)
 
   const links = [
@@ -38,7 +36,7 @@ export function SiteFooter() {
       <div className="border-t border-border bg-footer text-footer-foreground">
         <div className="mx-auto grid w-full max-w-7xl gap-12 px-6 py-16 md:grid-cols-12">
           {/* Brand + navigation */}
-          <div className="md:col-span-5">
+          <div className="md:col-span-6">
             <BrandMark />
             <p className="mt-6 max-w-sm text-pretty leading-relaxed text-muted-foreground">
               {t.footer.tagline}
@@ -52,7 +50,7 @@ export function SiteFooter() {
                   <li key={link.href}>
                     <Link
                       href={link.href}
-                      className="text-sm text-foreground/80 transition-colors hover:text-bordeaux"
+                      className="text-base text-foreground/80 transition-colors hover:text-bordeaux"
                     >
                       {link.label}
                     </Link>
@@ -63,11 +61,11 @@ export function SiteFooter() {
           </div>
 
           {/* Subscribe form */}
-          <div className="md:col-span-4">
+          <div className="md:col-span-6">
             <h3 className="mb-4 text-xs uppercase tracking-[0.24em] text-bordeaux">
               {t.footer.subscribeTitle}
             </h3>
-            <p className="mb-5 text-sm leading-relaxed text-muted-foreground">
+            <p className="mb-5 text-base leading-relaxed text-muted-foreground">
               {t.footer.subscribeBody}
             </p>
             <form onSubmit={handleSubscribe} className="flex flex-col gap-3">
@@ -77,14 +75,14 @@ export function SiteFooter() {
                   required
                   aria-label={t.footer.firstName}
                   placeholder={t.footer.firstName}
-                  className="h-11 border border-border bg-background px-3 text-sm outline-none transition-colors focus:border-bordeaux"
+                  className="h-11 border border-border bg-background px-3 text-base outline-none transition-colors focus:border-bordeaux"
                 />
                 <input
                   type="text"
                   required
                   aria-label={t.footer.lastName}
                   placeholder={t.footer.lastName}
-                  className="h-11 border border-border bg-background px-3 text-sm outline-none transition-colors focus:border-bordeaux"
+                  className="h-11 border border-border bg-background px-3 text-base outline-none transition-colors focus:border-bordeaux"
                 />
               </div>
               <input
@@ -92,56 +90,30 @@ export function SiteFooter() {
                 required
                 aria-label={t.footer.email}
                 placeholder={t.footer.email}
-                className="h-11 border border-border bg-background px-3 text-sm outline-none transition-colors focus:border-bordeaux"
+                className="h-11 border border-border bg-background px-3 text-base outline-none transition-colors focus:border-bordeaux"
               />
               <button
                 type="submit"
-                className="mt-1 inline-flex h-11 items-center justify-center bg-bordeaux px-6 text-xs uppercase tracking-[0.18em] text-bordeaux-foreground transition-opacity hover:opacity-90"
+                className="mt-1 inline-flex h-11 items-center justify-center bg-bordeaux px-6 text-sm uppercase tracking-[0.18em] text-bordeaux-foreground transition-opacity hover:opacity-90"
               >
                 {t.footer.subscribe}
               </button>
               {subscribed && (
-                <p className="flex items-center gap-2 text-sm text-bordeaux">
+                <p className="flex items-center gap-2 text-base text-bordeaux">
                   <Check className="size-4" /> {t.footer.subscribed}
                 </p>
               )}
             </form>
           </div>
 
-          {/* Language selection */}
-          <div className="md:col-span-3">
-            <h3 className="mb-4 text-xs uppercase tracking-[0.24em] text-bordeaux">
-              {t.footer.langTitle}
-            </h3>
-            <ul className="flex flex-col gap-2">
-              {locales.map((l) => (
-                <li key={l.code}>
-                  <button
-                    type="button"
-                    onClick={() => setLocale(l.code)}
-                    aria-pressed={locale === l.code}
-                    className={cn(
-                      'flex w-full items-center justify-between border-b border-border/70 py-2 text-left text-sm transition-colors',
-                      locale === l.code
-                        ? 'text-bordeaux'
-                        : 'text-foreground/70 hover:text-foreground',
-                    )}
-                  >
-                    <span>{l.label}</span>
-                    {locale === l.code && <Check className="size-4" />}
-                  </button>
-                </li>
-              ))}
-            </ul>
-          </div>
         </div>
       </div>
 
       {/* Copyright row — same white as the main content */}
       <div className="border-t border-border bg-background">
         <div className="mx-auto flex w-full max-w-7xl flex-col items-center justify-between gap-4 px-6 py-6 sm:flex-row">
-          <p className="text-xs tracking-wide text-muted-foreground">
-            © {new Date().getFullYear()} Viña Solara. {t.footer.rights}
+          <p className="text-sm tracking-wide text-muted-foreground">
+            © {new Date().getFullYear()} Familia Fumagalli. {t.footer.rights}
           </p>
           <div className="flex items-center gap-3">
             {socials.map(({ href, label, Icon }) => (
