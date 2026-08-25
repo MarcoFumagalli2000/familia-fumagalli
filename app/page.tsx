@@ -92,7 +92,7 @@ export default function HomePage() {
       <section className="bg-background py-24">
         <div className="mx-auto grid max-w-7xl items-center gap-14 px-6 md:grid-cols-2">
           <div className="order-2 md:order-1">
-            <p className="mb-4 text-xs uppercase tracking-[0.3em] text-bordeaux">La Familia</p>
+            <p className="mb-4 text-xs uppercase tracking-[0.3em] text-bordeaux">Fumagalli</p>
             <h2 className="text-balance font-serif text-4xl leading-tight md:text-5xl">
               {t.home.sectionEstateTitle}
             </h2>

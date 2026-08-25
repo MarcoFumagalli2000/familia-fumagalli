@@ -5,7 +5,7 @@
 @custom-variant dark (&:is(.dark *));
 
 @theme inline {
-  --font-sans: var(--font-jost), ui-sans-serif, system-ui, sans-serif;
+  --font-sans: var(--font-cormorant), ui-serif, Georgia, serif;
   --font-serif: var(--font-cormorant), ui-serif, Georgia, serif;
   --color-bordeaux: var(--bordeaux);
   --color-bordeaux-foreground: var(--bordeaux-foreground);

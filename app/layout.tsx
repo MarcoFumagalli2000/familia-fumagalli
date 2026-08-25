@@ -1,6 +1,6 @@
 import { Analytics } from '@vercel/analytics/next'
 import type { Metadata, Viewport } from 'next'
-import { Bodoni_Moda, Cormorant_Garamond, Jost } from 'next/font/google'
+import { Bodoni_Moda, Cormorant_Garamond } from 'next/font/google'
 import { LanguageProvider } from '@/components/language-provider'
 import { SiteHeader } from '@/components/site-header'
 import { SiteFooter } from '@/components/site-footer'
@@ -10,12 +10,6 @@ const cormorant = Cormorant_Garamond({
   subsets: ['latin'],
   weight: ['400', '500', '600', '700'],
   variable: '--font-cormorant',
-})
-
-const jost = Jost({
-  subsets: ['latin'],
-  weight: ['300', '400', '500', '600'],
-  variable: '--font-jost',
 })
 
 const bodoni = Bodoni_Moda({
@@ -44,9 +38,9 @@ export default function RootLayout({
   return (
     <html
       lang="es"
-      className={`light bg-background ${cormorant.variable} ${jost.variable} ${bodoni.variable}`}
+      className={`light bg-background ${cormorant.variable} ${bodoni.variable}`}
     >
-      <body className="antialiased font-sans">
+      <body className="antialiased font-serif">
         <LanguageProvider>
           <div className="flex min-h-dvh flex-col">
             <SiteHeader />

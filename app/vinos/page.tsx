@@ -101,7 +101,6 @@ export default function WinesPage() {
             href="/visitanos"
             className="mt-8 inline-flex h-12 items-center gap-2 bg-bordeaux px-8 text-xs uppercase tracking-[0.18em] text-bordeaux-foreground transition-opacity hover:opacity-90"
           >
-            {t.cta.plan}
             <ArrowRight className="size-4" />
           </Link>
         </div>
