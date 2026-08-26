@@ -76,7 +76,7 @@ export const dictionaries: Record<Locale, Dictionary> = {
     },
     home: {
       heroKicker: 'Familia Fumagalli',
-      heroTitle: 'Transmitiendo nuestra historia, desde Catena Brianza a Cerro Leones.',
+      heroTitle: 'Transmitiendo nuestra historia, desde Carate Brianza a Cerro Leones.',
             quote: 'El vino es la suma de todos los terroirs...',
       quoteAuthor: 'Michel Rolland',
       sectionTimeTitle: 'Nuestros Vinos',
@@ -146,7 +146,7 @@ export const dictionaries: Record<Locale, Dictionary> = {
       phoneLabel: 'Teléfono',
     },
     footer: {
-      tagline: 'Transmitiendo nuestra historia, desde Catena Brianza a Cerro Leones.',
+      tagline: 'Transmitiendo nuestra historia, desde Carate Brianza a Cerro Leones.',
       navTitle: 'Navegación',
       subscribeTitle: 'Recibe nuestra información',
       subscribeBody: 'Déjanos tus datos y te enviaremos un correo con información y horarios de la bodega.',

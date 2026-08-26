@@ -21,7 +21,7 @@ const bodoni = Bodoni_Moda({
 export const metadata: Metadata = {
   title: 'Familia Fumagalli',
   description:
-    'Familia Fumagalli. Transmitiendo nuestra historia, desde Catena Brianza a Cerro Leones.',
+    'Familia Fumagalli. Transmitiendo nuestra historia, desde Carate Brianza a Cerro Leones.',
   generator: 'v0.app',
 }
 
