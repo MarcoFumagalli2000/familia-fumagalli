@@ -105,13 +105,13 @@ export const dictionaries: Record<Locale, Dictionary> = {
       list: [
         { name: 'Malbec-Syrah', year: '2024', image: '/placeholder.svg', desc: 'Un ensamblaje tinto de carácter, con la intensidad del Malbec y la especia del Syrah.', notes: 'Ciruela, pimienta negra y taninos firmes.' },
         { name: 'Cabernet Franc', year: '2025', image: '/placeholder.svg', desc: 'Un tinto elegante y fresco, fiel expresión del clima de Tandil.', notes: 'Pimiento asado, frutos rojos y hierbas.' },
-        { name: 'Chardonnay', year: '2024', image: '/placeholder.svg', desc: 'Un blanco de cuerpo medio, equilibrado y amable.', notes: 'Manzana verde, cítricos y un final mineral.' },
-        { name: 'Sauvignon Blanc', year: '2024', image: '/placeholder.svg', desc: 'Un blanco vibrante y aromático, de gran frescura.', notes: 'Pomelo, maracuyá y hierba recién cortada.' },
-        { name: 'Blend de Blancas', year: '2024', image: '/placeholder.svg', desc: 'Un ensamblaje de variedades blancas, complejo y expresivo.', notes: 'Flores blancas, durazno y notas cítricas.' },
-        { name: 'Rosé', year: '2026', image: '/placeholder.svg', desc: 'Un rosado delicado y fresco, ideal para la tarde.', notes: 'Frutilla, pomelo rosado y final ligero.' },
         { name: 'Merlot', year: '2026', image: '/placeholder.svg', desc: 'Un tinto suave y redondo, de taninos sedosos.', notes: 'Cereza, ciruela y un toque de chocolate.' },
         { name: 'Pinot Noir', year: '2026', image: '/placeholder.svg', desc: 'Un tinto sutil y elegante, hijo del clima fresco serrano.', notes: 'Frutos rojos, sotobosque y especias suaves.' },
         { name: 'Syrah', year: '2026', image: '/placeholder.svg', desc: 'Un tinto intenso y especiado, de gran estructura.', notes: 'Mora, pimienta negra y violetas.' },
+        { name: 'Chardonnay', year: '2024', image: '/placeholder.svg', desc: 'Un blanco de cuerpo medio, equilibrado y amable.', notes: 'Manzana verde, cítricos y un final mineral.' },
+        { name: 'Sauvignon Blanc', year: '2024', image: '/placeholder.svg', desc: 'Un blanco vibrante y aromático, de gran frescura.', notes: 'Pomelo, maracuyá y hierba recién cortada.' },
+        { name: 'Blend de Blancas', year: '2024', image: '/placeholder.svg', desc: 'La mezcla de nuestras dos variedades de uvas blancas, Chardonnay y Sauvignon Blanc, en un vino complejo y expresivo.', notes: 'Flores blancas, durazno y notas cítricas.' },
+        { name: 'Rosé', year: '2026', image: '/placeholder.svg', desc: 'Un rosado delicado y fresco, ideal para la tarde.', notes: 'Frutilla, pomelo rosado y final ligero.' },
       ],
       tastingTitle: 'Notas de cata',
       tastingBody:
