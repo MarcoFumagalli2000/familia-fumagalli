@@ -22,7 +22,7 @@ type Dictionary = {
     intro: string
     terroirTitle: string
     terroirBody: string
-    list: { name: string; year: string; desc: string; notes: string }[]
+    list: { name: string; year: string; image: string; desc: string; notes: string }[]
     tastingTitle: string
     tastingBody: string
   }
@@ -103,9 +103,15 @@ export const dictionaries: Record<Locale, Dictionary> = {
       terroirBody:
         'Suelos volcánicos y aluviales, brisas frescas de la tarde y largas horas de sol definen el carácter de nuestras uvas. Cada parcela se vendimia a mano en el momento preciso de madurez.',
       list: [
-        { name: 'Gran Reserva', year: '2019', desc: 'Nuestro vino insignia, un ensamblaje de Cabernet Sauvignon y Merlot.', notes: 'Cassis, cedro, tabaco y un final prolongado y sedoso.' },
-        { name: 'Sombra', year: '2020', desc: 'Un tinto de expresión pura, elegante y contemporáneo.', notes: 'Frutos rojos, violeta y especias finas.' },
-        { name: 'Blanco de Altura', year: '2022', desc: 'Chardonnay de viñedos de altura, criado en barrica.', notes: 'Cítricos, flor blanca y una mineralidad vibrante.' },
+        { name: 'Malbec-Syrah', year: '2024', image: '/placeholder.svg', desc: 'Un ensamblaje tinto de carácter, con la intensidad del Malbec y la especia del Syrah.', notes: 'Ciruela, pimienta negra y taninos firmes.' },
+        { name: 'Cabernet Franc', year: '2025', image: '/placeholder.svg', desc: 'Un tinto elegante y fresco, fiel expresión del clima de Tandil.', notes: 'Pimiento asado, frutos rojos y hierbas.' },
+        { name: 'Chardonnay', year: '2024', image: '/placeholder.svg', desc: 'Un blanco de cuerpo medio, equilibrado y amable.', notes: 'Manzana verde, cítricos y un final mineral.' },
+        { name: 'Sauvignon Blanc', year: '2024', image: '/placeholder.svg', desc: 'Un blanco vibrante y aromático, de gran frescura.', notes: 'Pomelo, maracuyá y hierba recién cortada.' },
+        { name: 'Blend de Blancas', year: '2024', image: '/placeholder.svg', desc: 'Un ensamblaje de variedades blancas, complejo y expresivo.', notes: 'Flores blancas, durazno y notas cítricas.' },
+        { name: 'Rosé', year: '2026', image: '/placeholder.svg', desc: 'Un rosado delicado y fresco, ideal para la tarde.', notes: 'Frutilla, pomelo rosado y final ligero.' },
+        { name: 'Merlot', year: '2026', image: '/placeholder.svg', desc: 'Un tinto suave y redondo, de taninos sedosos.', notes: 'Cereza, ciruela y un toque de chocolate.' },
+        { name: 'Pinot Noir', year: '2026', image: '/placeholder.svg', desc: 'Un tinto sutil y elegante, hijo del clima fresco serrano.', notes: 'Frutos rojos, sotobosque y especias suaves.' },
+        { name: 'Syrah', year: '2026', image: '/placeholder.svg', desc: 'Un tinto intenso y especiado, de gran estructura.', notes: 'Mora, pimienta negra y violetas.' },
       ],
       tastingTitle: 'Notas de cata',
       tastingBody:

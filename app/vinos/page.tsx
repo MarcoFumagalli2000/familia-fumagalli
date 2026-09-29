@@ -4,6 +4,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { ArrowRight } from 'lucide-react'
 import { useLanguage } from '@/components/language-provider'
+import { WineCarousel } from '@/components/wine-carousel'
 
 export default function WinesPage() {
   const { t } = useLanguage()
@@ -54,33 +55,7 @@ export default function WinesPage() {
       {/* Wine list */}
       <section className="border-t border-border bg-footer py-24">
         <div className="mx-auto max-w-7xl px-6">
-          <div className="grid gap-8 md:grid-cols-3">
-            {t.wines.list.map((wine) => (
-              <article
-                key={wine.name}
-                className="flex flex-col border border-border bg-background"
-              >
-                <div className="relative aspect-[4/5] overflow-hidden bg-muted">
-                  <Image
-                    src="/images/vintage-bottle.png"
-                    alt={`Botella ${wine.name} ${wine.year}`}
-                    fill
-                    className="object-cover"
-                  />
-                </div>
-                <div className="flex flex-1 flex-col p-7">
-                  <div className="flex items-baseline justify-between gap-3">
-                    <h3 className="font-serif text-2xl">{wine.name}</h3>
-                    <span className="text-sm tracking-[0.15em] text-bordeaux">{wine.year}</span>
-                  </div>
-                  <p className="mt-3 leading-relaxed text-muted-foreground">{wine.desc}</p>
-                  <p className="mt-4 border-t border-border pt-4 text-sm italic leading-relaxed text-foreground/70">
-                    {wine.notes}
-                  </p>
-                </div>
-              </article>
-            ))}
-          </div>
+          <WineCarousel wines={t.wines.list} />
         </div>
       </section>
 
